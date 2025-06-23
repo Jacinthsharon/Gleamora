@@ -12,43 +12,42 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Nunito Sans",  sans-serif;
-  --nav-font: "Raleway",  sans-serif;
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Nunito Sans", sans-serif;
+  --nav-font: "Raleway", sans-serif;
 }
 
-/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
-  --background-color: #031119; /* Background color for the entire website, including individual sections */
-  --default-color: rgba(255, 255, 255, 0.8); /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #e0e9f2; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #e3a127; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #1b262c; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
-}
-
-/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+/* Global Colors - Updated to royal blue */
 :root {
-  --nav-color: rgba(255, 255, 255, 0.8);  /* The default color of the main navmenu links */
-  --nav-hover-color: #e3a127; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #29343a; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #29343a; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: rgba(255, 255, 255, 0.8); /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #e3a127; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --background-color: #0e0e34; /* Royal blue background */
+  --default-color: rgba(230, 203, 105, 0.8);
+  --heading-color: #e6cb69;
+  --accent-color: #e3a127;
+  --surface-color: #1b262c;
+  --contrast-color: #ffffff;
 }
 
-/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
+/* Nav Menu Colors */
+:root {
+  --nav-color: rgba(255, 255, 255, 0.8);
+  --nav-hover-color: #e3a127;
+  --nav-mobile-background-color: #29343a;
+  --nav-dropdown-background-color: #29343a;
+  --nav-dropdown-color: rgba(255, 255, 255, 0.8);
+  --nav-dropdown-hover-color: #e3a127;
+}
 
+/* Optional: update background variants if needed */
 .light-background {
-  --background-color: #0d1d26;
-  --surface-color: #16262f;
+  --background-color: #1b1b50;
+  --surface-color: #252565;
 }
 
 .dark-background {
-  --background-color: #060606;
+  --background-color: #0e0e34;
   --default-color: #ffffff;
   --heading-color: #ffffff;
-  --surface-color: #252525;
+  --surface-color: #1c1c4a;
   --contrast-color: #ffffff;
 }
 
@@ -67,18 +66,21 @@ body {
 }
 
 a {
-  color: var(--accent-color);
+  color: var(--heading-color) !important;
   text-decoration: none;
   transition: 0.3s;
 }
 
 a:hover {
-  color: color-mix(in srgb, var(--accent-color), transparent 25%);
+  color:  var(--accent-color) !important;
   text-decoration: none;
 }
 
+h2{
+  color: var(--accent-color);
+}
+
 h1,
-h2,
 h3,
 h4,
 h5,
@@ -178,8 +180,8 @@ h6 {
 
 .header .btn-getstarted,
 .header .btn-getstarted:focus {
-  color: var(--contrast-color);
-  background: var(--accent-color);
+  color: #000034 !important;
+  background: linear-gradient(135deg, #fbd385, #8c6231); /* gradient added */
   font-size: 14px;
   padding: 8px 20px;
   margin: 0 0 0 30px;
@@ -189,9 +191,10 @@ h6 {
 
 .header .btn-getstarted:hover,
 .header .btn-getstarted:focus:hover {
-  color: var(--contrast-color);
-  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+  color: #000034 !important;
+  background: linear-gradient(135deg, #8c6231,  #fbd385); /* keep same gradient or tweak if needed */
 }
+
 
 @media (max-width: 1200px) {
   .header {
@@ -743,7 +746,7 @@ section,
   margin: 0;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  color: var(--accent-color);
   position: relative;
 }
 
@@ -1159,7 +1162,8 @@ section,
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: var(--surface-color);
+  background: linear-gradient(135deg, #fbd385, #8c6231); /* gradient added */
+  color: #000034;
   border: 1px solid rgba(0, 0, 0, 0.08);
   display: flex;
   align-items: center;
@@ -1169,9 +1173,9 @@ section,
 }
 
 .about .testimonial-section .testimonial-intro .swiper-nav-buttons button:hover {
-  background-color: var(--accent-color);
+  background: linear-gradient(135deg, #8c6231, #fbd385); /* gradient added */
+  color: #000034;
   border-color: var(--accent-color);
-  color: var(--contrast-color);
 }
 
 .about .testimonial-section .testimonial-intro .swiper-nav-buttons button i {
@@ -1245,7 +1249,7 @@ section,
 
 .services .service-header .service-intro .service-heading span {
   display: block;
-  color: var(--accent-color);
+  color: var(--heading-color);
 }
 
 @media (max-width: 992px) {
@@ -1270,8 +1274,8 @@ section,
   display: inline-flex;
   align-items: center;
   padding: 12px 30px;
-  background-color: var(--accent-color);
-  color: var(--contrast-color);
+  background: linear-gradient(135deg, #fbd385, #8c6231); /* gradient added */
+  color: #000034 !important;
   border-radius: 4px;
   font-weight: 500;
   transition: all 0.3s ease;
@@ -1283,8 +1287,8 @@ section,
 }
 
 .services .service-header .service-summary .service-btn:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 15%);
-  color: var(--contrast-color);
+  background: linear-gradient(135deg, #fbd385, #8c6231); /* gradient added */
+  color: #000034 !important;
 }
 
 .services .service-header .service-summary .service-btn:hover i {
@@ -1960,8 +1964,13 @@ section,
 }
 
 .portfolio .portfolio-filters li.filter-active {
-  background: var(--accent-color);
-  color: var(--contrast-color);
+  background: linear-gradient(135deg, #fbd385, #8c6231); /* gradient added */
+  color: #000034;
+}
+
+.portfolio .portfolio-filters li.filter-active:hover {
+  background: linear-gradient(135deg, #8c6231, #fbd385); /* gradient added */
+  color: #000034;
 }
 
 @media (max-width: 768px) {
@@ -2708,9 +2717,9 @@ section,
 }
 
 .contact .contact-form-wrapper .btn-submit {
-  background-color: var(--accent-color);
+  background: linear-gradient(135deg, #fbd385, #8c6231); /* gradient added */
   border: none;
-  color: var(--contrast-color);
+  color: #000034;
   padding: 12px 30px;
   font-size: 16px;
   font-weight: 600;
@@ -2721,14 +2730,14 @@ section,
 }
 
 .contact .contact-form-wrapper .btn-submit:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 15%);
+  background: linear-gradient(135deg, #8c6231, #fbd385); /* gradient added */
   transform: translateY(-3px);
   box-shadow: 0 8px 20px color-mix(in srgb, var(--accent-color), transparent 60%);
 }
 
 .contact .contact-form-wrapper .btn-submit:active {
   transform: translateY(0);
-  box-shadow: 0 3px 10px color-mix(in srgb, var(--accent-color), transparent 70%);
+  background: linear-gradient(135deg, #8c6231, #fbd385); /* gradient added */
 }
 
 .contact .contact-form-wrapper .loading,

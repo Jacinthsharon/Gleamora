@@ -3776,3 +3776,50 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+
+.hero-slider {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+.hero-carousel {
+  display: flex;
+  animation: scrollSlides 64s linear infinite;
+  width: 800%; /* 8 slides */
+}
+.hero-slide {
+  flex: 0 0 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.hero-content {
+  background: rgba(0,0,0,0.6);
+  color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 600px;
+}
+
+@keyframes scrollSlides {
+  0%   { transform: translateX(0); }
+  12.5% { transform: translateX(-100vw); }
+  25%  { transform: translateX(-200vw); }
+  37.5%  { transform: translateX(-300vw); }
+  50%  { transform: translateX(-400vw); }
+  62.5%  { transform: translateX(-500vw); }
+  75%  { transform: translateX(-600vw); }
+  87.5%  { transform: translateX(-700vw); }
+  100% { transform: translateX(0); }
+}
+
+@media (max-width: 768px) {
+  .hero-content h2 { font-size: 1.75rem; }
+  .hero-content p { font-size: 1rem; }
+}

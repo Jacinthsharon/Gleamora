@@ -749,6 +749,7 @@ section,
   letter-spacing: 1.5px;
   text-transform: uppercase;
   color: var(--accent-color);
+  padding-top: 60px;
   position: relative;
 }
 

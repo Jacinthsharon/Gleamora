@@ -61,7 +61,6 @@
 --------------------------------------------------------------*/
 body {
   color: var(--default-color);
-  background-color: var(--background-color);
   font-family: var(--default-font);
 }
 
@@ -145,13 +144,13 @@ h5 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: rgba(255, 255, 255, 0);
+  background-color: transparent; /* fully transparent */
   color: var(--default-color);
-  background-color: var(--background-color);
   padding: 20px 0;
   transition: all 0.5s;
   z-index: 997;
 }
+
 
 .header a {
   font-weight: bold !important;
@@ -3803,6 +3802,19 @@ section,
   overflow: hidden;
 }
 
+/* Overlay for each slide */
+.hero-slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4); /* adjust opacity as needed */
+  z-index: 0;
+}
+
+
 /* CAROUSEL INNER SLIDES */
 .carousel-inner {
   width: 100%;
@@ -3823,13 +3835,14 @@ section,
 
 /* TEXT CONTENT */
 .hero-content {
-  background: rgba(0, 0, 0, 0.3); /* semi-transparent overlay */
   color: #fff;
   padding: 2rem;
   border-radius: 10px;
   text-align: center;
   max-width: 700px;
   animation: fadeInUp 1s ease-in-out;
+  position: relative;
+  z-index: 1;
 }
 
 .hero-content h2 {

@@ -60,7 +60,7 @@
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
 body {
-  color: var(--default-color);
+  color: var(--default-color); 
   font-family: var(--default-font);
 }
 
@@ -144,7 +144,7 @@ h5 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  background-color: transparent; /* fully transparent */
+  --background-color: rgba(0, 0, 0, 0.1); /* fully transparent */
   color: var(--default-color);
   padding: 20px 0;
   transition: all 0.5s;
@@ -720,8 +720,7 @@ h5 {
 section,
 .section {
   color: var(--default-color);
-  background-color: var(--background-color);
-  padding: 60px 0;
+  padding: 0px 0;
   scroll-margin-top: 90px;
   overflow: clip;
 }

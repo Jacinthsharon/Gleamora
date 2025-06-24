@@ -87,42 +87,96 @@
 
   <main class="main">
 
-<!-- Continuous Scrolling Hero Section -->
-<section id="hero" class="hero section overflow-hidden position-relative">
-  <div class="container-fluid p-0">
-    <div class="hero-scroll-wrapper d-flex">
+<section id="hero" class="hero-slider">
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+    <div class="carousel-inner">
 
       <!-- Slide 1 -->
-      <div class="hero-slide d-flex align-items-center justify-content-center text-center text-white flex-shrink-0 flex-grow-1" style="min-width: 100vw; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/img/hero/hero1.webp') center/cover no-repeat;">
-        <div class="p-4">
-          <h5 class="fw-bold">GLEAMORA CREATIONS</h5>
-          <h1 class="display-4 fw-bold">CRAFTED WITH LOVE</h1>
-          <p class="mt-3">We create heartfelt gifts that bring joy to every celebration. From photo frames to curated hampers, every item tells your story.</p>
-          <a href="#services" class="btn btn-light mt-3">Explore Services <i class="bi bi-arrow-right"></i></a>
+      <div class="carousel-item active">
+        <div class="hero-slide" style="background-image: url('assets/img/hero/hero1.webp');">
+          <div class="hero-content">
+            <h5>GLEAMORA CREATIONS</h5>
+            <h2>CRAFTED WITH LOVE</h2>
+            <p>We create heartfelt gifts that bring joy to every celebration.</p>
+          </div>
         </div>
       </div>
 
-      <!-- Slide 2 -->
-      <div class="hero-slide d-flex align-items-center justify-content-center text-center text-white flex-shrink-0 flex-grow-1" style="min-width: 100vw; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/img/hero/hero2.webp') center/cover no-repeat;">
-        <div class="p-4">
-          <h1 class="display-5 fw-bold">PERSONALIZED TOUCH</h1>
-          <p class="mt-3">Custom-made gifts designed to reflect your emotions and make your loved ones feel special.</p>
-          <a href="#products" class="btn btn-light mt-3">View Products <i class="bi bi-arrow-right"></i></a>
+     
+       <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="hero-slide" style="background-image: url('assets/img/hero/hero2.webp');">
+          <div class="hero-content">
+            <h5>RETURN GIFTS</h5>
+            <h2>MEMORIES IN EVERY TOKEN</h2>
+            <p>Thoughtful gifts for every guest and every occasion.</p>
+          </div>
         </div>
       </div>
 
-      <!-- Slide 3 -->
-      <div class="hero-slide d-flex align-items-center justify-content-center text-center text-white flex-shrink-0 flex-grow-1" style="min-width: 100vw; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/img/hero/hero3.webp') center/cover no-repeat;">
-        <div class="p-4">
-          <h1 class="display-5 fw-bold">GIFTS FOR ALL OCCASIONS</h1>
-          <p class="mt-3">Celebrate birthdays, anniversaries, baby showers, and more with gifts that speak from the heart.</p>
-          <a href="#contact" class="btn btn-light mt-3">Get in Touch <i class="bi bi-arrow-right"></i></a>
+       <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="hero-slide" style="background-image: url('assets/img/hero/hero2.webp');">
+          <div class="hero-content">
+            <h5>RETURN GIFTS</h5>
+            <h2>MEMORIES IN EVERY TOKEN</h2>
+            <p>Thoughtful gifts for every guest and every occasion.</p>
+          </div>
         </div>
       </div>
+
+       <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="hero-slide" style="background-image: url('assets/img/hero/hero2.webp');">
+          <div class="hero-content">
+            <h5>RETURN GIFTS</h5>
+            <h2>MEMORIES IN EVERY TOKEN</h2>
+            <p>Thoughtful gifts for every guest and every occasion.</p>
+          </div>
+        </div>
+      </div>
+
+       <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="hero-slide" style="background-image: url('assets/img/hero/hero2.webp');">
+          <div class="hero-content">
+            <h5>RETURN GIFTS</h5>
+            <h2>MEMORIES IN EVERY TOKEN</h2>
+            <p>Thoughtful gifts for every guest and every occasion.</p>
+          </div>
+        </div>
+      </div>
+
+       <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="hero-slide" style="background-image: url('assets/img/hero/hero2.webp');">
+          <div class="hero-content">
+            <h5>RETURN GIFTS</h5>
+            <h2>MEMORIES IN EVERY TOKEN</h2>
+            <p>Thoughtful gifts for every guest and every occasion.</p>
+          </div>
+        </div>
+      </div>
+       <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="hero-slide" style="background-image: url('assets/img/hero/hero2.webp');">
+          <div class="hero-content">
+            <h5>RETURN GIFTS</h5>
+            <h2>MEMORIES IN EVERY TOKEN</h2>
+            <p>Thoughtful gifts for every guest and every occasion.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add more slides up to 8 -->
+      <!-- Slide 3 to 8 here... -->
 
     </div>
   </div>
 </section>
+
+
+
 
 
 
@@ -163,10 +217,11 @@
                 <i class="bi bi-house-heart"></i> Home Decor
               </li>
               <li data-filter=".filter-custom">
-                <i class="bi bi-stars"></i> Customized Gifts
+                <i class="bi bi-stars"></i> Personalized Gifts
               </li>
-              <li data-filter=".filter-personal">
-                <i class="bi bi-person-heart"></i> Personalized Gifts
+              <li data-filter=".filter-cards">
+                <i class="bi bi-stickies"></i> Cards & Stickers
+
               </li>
             </ul>
 
@@ -177,13 +232,55 @@
               <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
                 <article class="portfolio-entry">
                   <figure class="entry-image">
-                    <img src="assets/img/portfolio/portfolio-1.webp" class="img-fluid" alt="Photo Frame" loading="lazy">
+                    <img src="assets/img/photo-frames/1.jpeg" class="img-fluid" alt="Photo Frame" loading="lazy">
                     <div class="entry-overlay">
                       <div class="overlay-content">
                         <div class="entry-meta">Photo Frame</div>
                         <h3 class="entry-title">Custom Memory Frames</h3>
                         <div class="entry-links">
-                          <a href="assets/img/portfolio/portfolio-1.webp" class="glightbox" data-gallery="gallery-photo">
+                          <a href="assets/img/photo-frames/1.jpeg" class="glightbox" data-gallery="gallery-photo">
+                            <i class="bi bi-arrows-angle-expand"></i>
+                          </a>
+                          <a href="portfolio-details.html"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+
+              <!-- Photo Frames -->
+              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+                <article class="portfolio-entry">
+                  <figure class="entry-image">
+                    <img src="assets/img/photo-frames/2.jpeg" class="img-fluid" alt="Photo Frame" loading="lazy">
+                    <div class="entry-overlay">
+                      <div class="overlay-content">
+                        <div class="entry-meta">Photo Frame</div>
+                        <h3 class="entry-title">Custom Memory Frames</h3>
+                        <div class="entry-links">
+                          <a href="assets/img/photo-frames/2.jpeg" class="glightbox" data-gallery="gallery-photo">
+                            <i class="bi bi-arrows-angle-expand"></i>
+                          </a>
+                          <a href="portfolio-details.html"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+
+              <!-- Photo Frames -->
+              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+                <article class="portfolio-entry">
+                  <figure class="entry-image">
+                    <img src="assets/img/photo-frames/3.jpeg" class="img-fluid" alt="Photo Frame" loading="lazy">
+                    <div class="entry-overlay">
+                      <div class="overlay-content">
+                        <div class="entry-meta">Photo Frame</div>
+                        <h3 class="entry-title">Custom Memory Frames</h3>
+                        <div class="entry-links">
+                          <a href="assets/img/photo-frames/3.jpeg" class="glightbox" data-gallery="gallery-photo">
                             <i class="bi bi-arrows-angle-expand"></i>
                           </a>
                           <a href="portfolio-details.html"><i class="bi bi-arrow-right"></i></a>
@@ -195,16 +292,79 @@
               </div>
 
               <!-- Return Gifts -->
-              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-gift">
+              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-return">
                 <article class="portfolio-entry">
                   <figure class="entry-image">
-                    <img src="assets/img/portfolio/portfolio-2.webp" class="img-fluid" alt="Return Gift" loading="lazy">
+                    <img src="assets/img/return-gifts/1.jpeg" class="img-fluid" alt="Return Gift" loading="lazy">
                     <div class="entry-overlay">
                       <div class="overlay-content">
                         <div class="entry-meta">Return Gifts</div>
                         <h3 class="entry-title">Event Return Favors</h3>
                         <div class="entry-links">
-                          <a href="assets/img/portfolio/portfolio-2.webp" class="glightbox" data-gallery="gallery-gift">
+                          <a href="assets/img/return-gifts/1.jpeg" class="glightbox" data-gallery="gallery-gift">
+                            <i class="bi bi-arrows-angle-expand"></i>
+                          </a>
+                          <a href="portfolio-details.html"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+
+              <!-- Return Gifts -->
+              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-return">
+                <article class="portfolio-entry">
+                  <figure class="entry-image">
+                    <img src="assets/img/return-gifts/2.jpeg" class="img-fluid" alt="Return Gift" loading="lazy">
+                    <div class="entry-overlay">
+                      <div class="overlay-content">
+                        <div class="entry-meta">Return Gifts</div>
+                        <h3 class="entry-title">Event Return Favors</h3>
+                        <div class="entry-links">
+                          <a href="assets/img/return-gifts/2.jpeg" class="glightbox" data-gallery="gallery-gift">
+                            <i class="bi bi-arrows-angle-expand"></i>
+                          </a>
+                          <a href="portfolio-details.html"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+
+              <!-- Return Gifts -->
+              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-return">
+                <article class="portfolio-entry">
+                  <figure class="entry-image">
+                    <img src="assets/img/return-gifts/3.jpeg" class="img-fluid" alt="Return Gift" loading="lazy">
+                    <div class="entry-overlay">
+                      <div class="overlay-content">
+                        <div class="entry-meta">Return Gifts</div>
+                        <h3 class="entry-title">Event Return Favors</h3>
+                        <div class="entry-links">
+                          <a href="assets/img/return-gifts/3.jpeg" class="glightbox" data-gallery="gallery-gift">
+                            <i class="bi bi-arrows-angle-expand"></i>
+                          </a>
+                          <a href="portfolio-details.html"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+
+              <!-- Return Gifts -->
+              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-return">
+                <article class="portfolio-entry">
+                  <figure class="entry-image">
+                    <img src="assets/img/return-gifts/4.jpeg" class="img-fluid" alt="Return Gift" loading="lazy">
+                    <div class="entry-overlay">
+                      <div class="overlay-content">
+                        <div class="entry-meta">Return Gifts</div>
+                        <h3 class="entry-title">Event Return Favors</h3>
+                        <div class="entry-links">
+                          <a href="assets/img/return-gifts/4.jpeg" class="glightbox" data-gallery="gallery-gift">
                             <i class="bi bi-arrows-angle-expand"></i>
                           </a>
                           <a href="portfolio-details.html"><i class="bi bi-arrow-right"></i></a>
@@ -216,16 +376,227 @@
               </div>
 
               <!-- Hamper Boxes -->
-              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-gift">
+              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-hamper">
                 <article class="portfolio-entry">
                   <figure class="entry-image">
-                    <img src="assets/img/portfolio/portfolio-10.webp" class="img-fluid" alt="Hamper Box" loading="lazy">
+                    <img src="assets/img/hamper-box/1.jpeg" class="img-fluid" alt="Hamper Box" loading="lazy">
                     <div class="entry-overlay">
                       <div class="overlay-content">
                         <div class="entry-meta">Hamper Boxes</div>
                         <h3 class="entry-title">Festive Hamper Sets</h3>
                         <div class="entry-links">
-                          <a href="assets/img/portfolio/portfolio-10.webp" class="glightbox" data-gallery="gallery-gift">
+                          <a href="assets/img/hamper-box/1.jpeg" class="glightbox" data-gallery="gallery-gift">
+                            <i class="bi bi-arrows-angle-expand"></i>
+                          </a>
+                          <a href="portfolio-details.html"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+
+              <!-- Hamper Boxes -->
+              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-hamper">
+                <article class="portfolio-entry">
+                  <figure class="entry-image">
+                    <img src="assets/img/hamper-box/2.jpeg" class="img-fluid" alt="Hamper Box" loading="lazy">
+                    <div class="entry-overlay">
+                      <div class="overlay-content">
+                        <div class="entry-meta">Hamper Boxes</div>
+                        <h3 class="entry-title">Festive Hamper Sets</h3>
+                        <div class="entry-links">
+                          <a href="assets/img/hamper-box/2.jpeg" class="glightbox" data-gallery="gallery-gift">
+                            <i class="bi bi-arrows-angle-expand"></i>
+                          </a>
+                          <a href="portfolio-details.html"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+
+              <!-- Hamper Boxes -->
+              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-hamper">
+                <article class="portfolio-entry">
+                  <figure class="entry-image">
+                    <img src="assets/img/hamper-box/3.jpeg" class="img-fluid" alt="Hamper Box" loading="lazy">
+                    <div class="entry-overlay">
+                      <div class="overlay-content">
+                        <div class="entry-meta">Hamper Boxes</div>
+                        <h3 class="entry-title">Festive Hamper Sets</h3>
+                        <div class="entry-links">
+                          <a href="assets/img/hamper-box/3.jpeg" class="glightbox" data-gallery="gallery-gift">
+                            <i class="bi bi-arrows-angle-expand"></i>
+                          </a>
+                          <a href="portfolio-details.html"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+
+              <!-- Hamper Boxes -->
+              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-hamper">
+                <article class="portfolio-entry">
+                  <figure class="entry-image">
+                    <img src="assets/img/hamper-box/4.jpeg" class="img-fluid" alt="Hamper Box" loading="lazy">
+                    <div class="entry-overlay">
+                      <div class="overlay-content">
+                        <div class="entry-meta">Hamper Boxes</div>
+                        <h3 class="entry-title">Festive Hamper Sets</h3>
+                        <div class="entry-links">
+                          <a href="assets/img/hamper-box/4.jpeg" class="glightbox" data-gallery="gallery-gift">
+                            <i class="bi bi-arrows-angle-expand"></i>
+                          </a>
+                          <a href="portfolio-details.html"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+
+              <!-- Hamper Boxes -->
+              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-hamper">
+                <article class="portfolio-entry">
+                  <figure class="entry-image">
+                    <img src="assets/img/hamper-box/5.jpeg" class="img-fluid" alt="Hamper Box" loading="lazy">
+                    <div class="entry-overlay">
+                      <div class="overlay-content">
+                        <div class="entry-meta">Hamper Boxes</div>
+                        <h3 class="entry-title">Festive Hamper Sets</h3>
+                        <div class="entry-links">
+                          <a href="assets/img/hamper-box/5.jpeg" class="glightbox" data-gallery="gallery-gift">
+                            <i class="bi bi-arrows-angle-expand"></i>
+                          </a>
+                          <a href="portfolio-details.html"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+
+              <!-- Hamper Boxes -->
+              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-hamper">
+                <article class="portfolio-entry">
+                  <figure class="entry-image">
+                    <img src="assets/img/hamper-box/6.jpeg" class="img-fluid" alt="Hamper Box" loading="lazy">
+                    <div class="entry-overlay">
+                      <div class="overlay-content">
+                        <div class="entry-meta">Hamper Boxes</div>
+                        <h3 class="entry-title">Festive Hamper Sets</h3>
+                        <div class="entry-links">
+                          <a href="assets/img/hamper-box/6.jpeg" class="glightbox" data-gallery="gallery-gift">
+                            <i class="bi bi-arrows-angle-expand"></i>
+                          </a>
+                          <a href="portfolio-details.html"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+
+              <!-- Hamper Boxes -->
+              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-hamper">
+                <article class="portfolio-entry">
+                  <figure class="entry-image">
+                    <img src="assets/img/hamper-box/7.jpeg" class="img-fluid" alt="Hamper Box" loading="lazy">
+                    <div class="entry-overlay">
+                      <div class="overlay-content">
+                        <div class="entry-meta">Hamper Boxes</div>
+                        <h3 class="entry-title">Festive Hamper Sets</h3>
+                        <div class="entry-links">
+                          <a href="assets/img/hamper-box/7.jpeg" class="glightbox" data-gallery="gallery-gift">
+                            <i class="bi bi-arrows-angle-expand"></i>
+                          </a>
+                          <a href="portfolio-details.html"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+
+              <!-- Hamper Boxes -->
+              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-hamper">
+                <article class="portfolio-entry">
+                  <figure class="entry-image">
+                    <img src="assets/img/hamper-box/8.jpeg" class="img-fluid" alt="Hamper Box" loading="lazy">
+                    <div class="entry-overlay">
+                      <div class="overlay-content">
+                        <div class="entry-meta">Hamper Boxes</div>
+                        <h3 class="entry-title">Festive Hamper Sets</h3>
+                        <div class="entry-links">
+                          <a href="assets/img/hamper-box/8.jpeg" class="glightbox" data-gallery="gallery-gift">
+                            <i class="bi bi-arrows-angle-expand"></i>
+                          </a>
+                          <a href="portfolio-details.html"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+
+              <!-- Hamper Boxes -->
+              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-hamper">
+                <article class="portfolio-entry">
+                  <figure class="entry-image">
+                    <img src="assets/img/hamper-box/9.jpeg" class="img-fluid" alt="Hamper Box" loading="lazy">
+                    <div class="entry-overlay">
+                      <div class="overlay-content">
+                        <div class="entry-meta">Hamper Boxes</div>
+                        <h3 class="entry-title">Festive Hamper Sets</h3>
+                        <div class="entry-links">
+                          <a href="assets/img/hamper-box/9.jpeg" class="glightbox" data-gallery="gallery-gift">
+                            <i class="bi bi-arrows-angle-expand"></i>
+                          </a>
+                          <a href="portfolio-details.html"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+
+              <!-- Hamper Boxes -->
+              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-hamper">
+                <article class="portfolio-entry">
+                  <figure class="entry-image">
+                    <img src="assets/img/hamper-box/10.jpeg" class="img-fluid" alt="Hamper Box" loading="lazy">
+                    <div class="entry-overlay">
+                      <div class="overlay-content">
+                        <div class="entry-meta">Hamper Boxes</div>
+                        <h3 class="entry-title">Festive Hamper Sets</h3>
+                        <div class="entry-links">
+                          <a href="assets/img/hamper-box/10.jpeg" class="glightbox" data-gallery="gallery-gift">
+                            <i class="bi bi-arrows-angle-expand"></i>
+                          </a>
+                          <a href="portfolio-details.html"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+
+
+              <!-- Live Plants -->
+              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-plants">
+                <article class="portfolio-entry">
+                  <figure class="entry-image">
+                    <img src="assets/img/live-plants/1.jpeg" class="img-fluid" alt="Live Plant" loading="lazy">
+                    <div class="entry-overlay">
+                      <div class="overlay-content">
+                        <div class="entry-meta">Live Plants</div>
+                        <h3 class="entry-title">Indoor Green Gifts</h3>
+                        <div class="entry-links">
+                          <a href="assets/img/live-plants/1.jpeg" class="glightbox" data-gallery="gallery-plants">
                             <i class="bi bi-arrows-angle-expand"></i>
                           </a>
                           <a href="portfolio-details.html"><i class="bi bi-arrow-right"></i></a>
@@ -240,13 +611,55 @@
               <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-plants">
                 <article class="portfolio-entry">
                   <figure class="entry-image">
-                    <img src="assets/img/portfolio/portfolio-4.webp" class="img-fluid" alt="Live Plant" loading="lazy">
+                    <img src="assets/img/live-plants/2.jpeg" class="img-fluid" alt="Live Plant" loading="lazy">
                     <div class="entry-overlay">
                       <div class="overlay-content">
                         <div class="entry-meta">Live Plants</div>
                         <h3 class="entry-title">Indoor Green Gifts</h3>
                         <div class="entry-links">
-                          <a href="assets/img/portfolio/portfolio-4.webp" class="glightbox" data-gallery="gallery-plants">
+                          <a href="assets/img/live-plants/2.jpeg" class="glightbox" data-gallery="gallery-plants">
+                            <i class="bi bi-arrows-angle-expand"></i>
+                          </a>
+                          <a href="portfolio-details.html"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+
+              <!-- Live Plants -->
+              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-plants">
+                <article class="portfolio-entry">
+                  <figure class="entry-image">
+                    <img src="assets/img/live-plants/3.jpeg" class="img-fluid" alt="Live Plant" loading="lazy">
+                    <div class="entry-overlay">
+                      <div class="overlay-content">
+                        <div class="entry-meta">Live Plants</div>
+                        <h3 class="entry-title">Indoor Green Gifts</h3>
+                        <div class="entry-links">
+                          <a href="assets/img/live-plants/3.jpeg" class="glightbox" data-gallery="gallery-plants">
+                            <i class="bi bi-arrows-angle-expand"></i>
+                          </a>
+                          <a href="portfolio-details.html"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+
+              <!-- Live Plants -->
+              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-plants">
+                <article class="portfolio-entry">
+                  <figure class="entry-image">
+                    <img src="assets/img/live-plants/4.jpeg" class="img-fluid" alt="Live Plant" loading="lazy">
+                    <div class="entry-overlay">
+                      <div class="overlay-content">
+                        <div class="entry-meta">Live Plants</div>
+                        <h3 class="entry-title">Indoor Green Gifts</h3>
+                        <div class="entry-links">
+                          <a href="assets/img/live-plants/4.jpeg" class="glightbox" data-gallery="gallery-plants">
                             <i class="bi bi-arrows-angle-expand"></i>
                           </a>
                           <a href="portfolio-details.html"><i class="bi bi-arrow-right"></i></a>
@@ -258,16 +671,16 @@
               </div>
 
               <!-- Bouquets -->
-              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-gift">
+              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-bouquet">
                 <article class="portfolio-entry">
                   <figure class="entry-image">
-                    <img src="assets/img/portfolio/portfolio-5.webp" class="img-fluid" alt="Bouquet" loading="lazy">
+                    <img src="assets/img/bouquets/1.jpeg" class="img-fluid" alt="Bouquet" loading="lazy">
                     <div class="entry-overlay">
                       <div class="overlay-content">
                         <div class="entry-meta">Bouquets</div>
                         <h3 class="entry-title">Fresh & Artificial Blooms</h3>
                         <div class="entry-links">
-                          <a href="assets/img/portfolio/portfolio-5.webp" class="glightbox" data-gallery="gallery-gift">
+                          <a href="assets/img/bouquets/1.jpeg" class="glightbox" data-gallery="gallery-gift">
                             <i class="bi bi-arrows-angle-expand"></i>
                           </a>
                           <a href="portfolio-details.html"><i class="bi bi-arrow-right"></i></a>
@@ -277,6 +690,29 @@
                   </figure>
                 </article>
               </div>
+
+
+              <!-- Bouquets -->
+              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-bouquet">
+                <article class="portfolio-entry">
+                  <figure class="entry-image">
+                    <img src="assets/img/bouquets/2.jpeg" class="img-fluid" alt="Bouquet" loading="lazy">
+                    <div class="entry-overlay">
+                      <div class="overlay-content">
+                        <div class="entry-meta">Bouquets</div>
+                        <h3 class="entry-title">Fresh & Artificial Blooms</h3>
+                        <div class="entry-links">
+                          <a href="assets/img/bouquets/2.jpeg" class="glightbox" data-gallery="gallery-gift">
+                            <i class="bi bi-arrows-angle-expand"></i>
+                          </a>
+                          <a href="portfolio-details.html"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+
 
               <!-- Home Decor -->
               <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-decor">
@@ -299,17 +735,17 @@
                 </article>
               </div>
 
-              <!-- Customized Gifts -->
-              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-gift">
+              <!-- Personalized Gifts -->
+              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-custom">
                 <article class="portfolio-entry">
                   <figure class="entry-image">
-                    <img src="assets/img/portfolio/portfolio-7.webp" class="img-fluid" alt="Customized Gift" loading="lazy">
+                    <img src="assets/img/personalized-gifts/1.jpeg" class="img-fluid" alt="Customized Gift" loading="lazy">
                     <div class="entry-overlay">
                       <div class="overlay-content">
                         <div class="entry-meta">Customized Gifts</div>
                         <h3 class="entry-title">Tailored Gift Creations</h3>
                         <div class="entry-links">
-                          <a href="assets/img/portfolio/portfolio-7.webp" class="glightbox" data-gallery="gallery-gift">
+                          <a href="assets/img/personalized-gifts/1.jpeg" class="glightbox" data-gallery="gallery-gift">
                             <i class="bi bi-arrows-angle-expand"></i>
                           </a>
                           <a href="portfolio-details.html"><i class="bi bi-arrow-right"></i></a>
@@ -321,16 +757,163 @@
               </div>
 
               <!-- Personalized Gifts -->
-              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-gift">
+              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-custom">
                 <article class="portfolio-entry">
                   <figure class="entry-image">
-                    <img src="assets/img/portfolio/portfolio-8.webp" class="img-fluid" alt="Personalized Gift" loading="lazy">
+                    <img src="assets/img/personalized-gifts/2.jpeg" class="img-fluid" alt="Customized Gift" loading="lazy">
+                    <div class="entry-overlay">
+                      <div class="overlay-content">
+                        <div class="entry-meta">Customized Gifts</div>
+                        <h3 class="entry-title">Tailored Gift Creations</h3>
+                        <div class="entry-links">
+                          <a href="assets/img/personalized-gifts/1=2.jpeg" class="glightbox" data-gallery="gallery-gift">
+                            <i class="bi bi-arrows-angle-expand"></i>
+                          </a>
+                          <a href="portfolio-details.html"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+
+              <!-- Personalized Gifts -->
+              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-custom">
+                <article class="portfolio-entry">
+                  <figure class="entry-image">
+                    <img src="assets/img/personalized-gifts/3.jpeg" class="img-fluid" alt="Customized Gift" loading="lazy">
+                    <div class="entry-overlay">
+                      <div class="overlay-content">
+                        <div class="entry-meta">Customized Gifts</div>
+                        <h3 class="entry-title">Tailored Gift Creations</h3>
+                        <div class="entry-links">
+                          <a href="assets/img/personalized-gifts/3.jpeg" class="glightbox" data-gallery="gallery-gift">
+                            <i class="bi bi-arrows-angle-expand"></i>
+                          </a>
+                          <a href="portfolio-details.html"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+
+              <!-- Personalized Gifts -->
+              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-custom">
+                <article class="portfolio-entry">
+                  <figure class="entry-image">
+                    <img src="assets/img/personalized-gifts/4.jpeg" class="img-fluid" alt="Customized Gift" loading="lazy">
+                    <div class="entry-overlay">
+                      <div class="overlay-content">
+                        <div class="entry-meta">Customized Gifts</div>
+                        <h3 class="entry-title">Tailored Gift Creations</h3>
+                        <div class="entry-links">
+                          <a href="assets/img/personalized-gifts/4.jpeg" class="glightbox" data-gallery="gallery-gift">
+                            <i class="bi bi-arrows-angle-expand"></i>
+                          </a>
+                          <a href="portfolio-details.html"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+
+              <!-- Personalized Gifts -->
+              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-custom">
+                <article class="portfolio-entry">
+                  <figure class="entry-image">
+                    <img src="assets/img/personalized-gifts/5.jpeg" class="img-fluid" alt="Customized Gift" loading="lazy">
+                    <div class="entry-overlay">
+                      <div class="overlay-content">
+                        <div class="entry-meta">Customized Gifts</div>
+                        <h3 class="entry-title">Tailored Gift Creations</h3>
+                        <div class="entry-links">
+                          <a href="assets/img/personalized-gifts/5.jpeg" class="glightbox" data-gallery="gallery-gift">
+                            <i class="bi bi-arrows-angle-expand"></i>
+                          </a>
+                          <a href="portfolio-details.html"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+
+              <!-- cards and stickers -->
+              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-cards">
+                <article class="portfolio-entry">
+                  <figure class="entry-image">
+                    <img src="assets/img/cards-stickers/1.jpeg" class="img-fluid" alt="Personalized Gift" loading="lazy">
                     <div class="entry-overlay">
                       <div class="overlay-content">
                         <div class="entry-meta">Personalized Gifts</div>
                         <h3 class="entry-title">Name & Theme-Based Items</h3>
                         <div class="entry-links">
-                          <a href="assets/img/portfolio/portfolio-8.webp" class="glightbox" data-gallery="gallery-gift">
+                          <a href="assets/img/cards-stickers/1.jpeg" class="glightbox" data-gallery="gallery-gift">
+                            <i class="bi bi-arrows-angle-expand"></i>
+                          </a>
+                          <a href="portfolio-details.html"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+
+              <!-- cards and stickers -->
+              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-cards">
+                <article class="portfolio-entry">
+                  <figure class="entry-image">
+                    <img src="assets/img/cards-stickers/2.jpeg" class="img-fluid" alt="Personalized Gift" loading="lazy">
+                    <div class="entry-overlay">
+                      <div class="overlay-content">
+                        <div class="entry-meta">Personalized Gifts</div>
+                        <h3 class="entry-title">Name & Theme-Based Items</h3>
+                        <div class="entry-links">
+                          <a href="assets/img/cards-stickers/2.jpeg" class="glightbox" data-gallery="gallery-gift">
+                            <i class="bi bi-arrows-angle-expand"></i>
+                          </a>
+                          <a href="portfolio-details.html"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+
+              <!-- cards and stickers -->
+              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-cards">
+                <article class="portfolio-entry">
+                  <figure class="entry-image">
+                    <img src="assets/img/cards-stickers/3.jpeg" class="img-fluid" alt="Personalized Gift" loading="lazy">
+                    <div class="entry-overlay">
+                      <div class="overlay-content">
+                        <div class="entry-meta">Personalized Gifts</div>
+                        <h3 class="entry-title">Name & Theme-Based Items</h3>
+                        <div class="entry-links">
+                          <a href="assets/img/cards-stickers/3.jpeg" class="glightbox" data-gallery="gallery-gift">
+                            <i class="bi bi-arrows-angle-expand"></i>
+                          </a>
+                          <a href="portfolio-details.html"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+
+              <!-- cards and stickers -->
+              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-cards">
+                <article class="portfolio-entry">
+                  <figure class="entry-image">
+                    <img src="assets/img/cards-stickers/4.jpeg" class="img-fluid" alt="Personalized Gift" loading="lazy">
+                    <div class="entry-overlay">
+                      <div class="overlay-content">
+                        <div class="entry-meta">Personalized Gifts</div>
+                        <h3 class="entry-title">Name & Theme-Based Items</h3>
+                        <div class="entry-links">
+                          <a href="assets/img/cards-stickers/4.jpeg" class="glightbox" data-gallery="gallery-gift">
                             <i class="bi bi-arrows-angle-expand"></i>
                           </a>
                           <a href="portfolio-details.html"><i class="bi bi-arrow-right"></i></a>
@@ -481,25 +1064,11 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-card position-relative z-1">
-              <div class="service-icon">
-                <i class="bi bi-stars"></i>
-              </div>
-              <!-- <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                <i class="bi bi-arrow-up-right"></i>
-              </a> -->
-              <h3><a href="service-details.html">Customized <span>Gifts</span></a></h3>
-              <p>
-                Have an idea? We make it real. Fully customized gift items as per your theme, colors, and preferences.
-              </p>
-            </div>
-          </div>
-
+      
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-card position-relative z-1">
               <div class="service-icon">
-                <i class="bi bi-person-heart"></i>
+                <i class="bi bi-stars"></i>
               </div>
               <!-- <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
                 <i class="bi bi-arrow-up-right"></i>
@@ -510,6 +1079,22 @@
               </p>
             </div>
           </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-stickies"></i>
+              </div>
+              <!-- <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i class="bi bi-arrow-up-right"></i>
+              </a> -->
+              <h3><a href="service-details.html">Cards & <span>Stickers</span></a></h3>
+              <p>
+                Celebrate every moment with beautifully designed cards and fun, vibrant stickers—perfect for gifting, decoration, or branding.
+              </p>
+            </div>
+          </div>
+
 
         </div>
 
@@ -971,13 +1556,13 @@
             <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
               <article class="portfolio-entry">
                 <figure class="entry-image">
-                  <img src="assets/img/portfolio/portfolio-1.webp" class="img-fluid" alt="" loading="lazy">
+                  <img src="assets/img/photo-frames/1.jpeg" class="img-fluid" alt="" loading="lazy">
                   <div class="entry-overlay">
                     <div class="overlay-content">
                       <div class="entry-meta">UI/UX Design</div>
                       <h3 class="entry-title">Mobile Banking App</h3>
                       <div class="entry-links">
-                        <a href="assets/img/portfolio/portfolio-1.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: Mobile Banking App; description: Praesent commodo cursus magna, vel scelerisque nisl consectetur.">
+                        <a href="assets/img/photo-frames/1.jpeg" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: Mobile Banking App; description: Praesent commodo cursus magna, vel scelerisque nisl consectetur.">
                           <i class="bi bi-arrows-angle-expand"></i>
                         </a>
                         <a href="portfolio-details.html">

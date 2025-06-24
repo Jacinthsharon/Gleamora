@@ -19,10 +19,10 @@
 
 /* Global Colors - Updated to royal blue */
 :root {
-  --background-color: #fff; /* Royal blue background */
-  --default-color: rgba(0, 0, 52, 0.8);
-  --heading-color: #000034;
-  --accent-color: #0e0e34;
+  --background-color: #0e0e34; /* Royal blue background */
+  --default-color: rgba(230, 203, 105, 0.8);
+  --heading-color: #e6cb69;
+  --accent-color: #e3a127;
   --surface-color: #1b262c;
   --contrast-color: #ffffff;
 } 
@@ -77,8 +77,7 @@ a:hover {
 }
 
 h2{
-  color: #c89a58 !important;
-  font-weight: bold !important;
+  color: var(--accent-color);
 }
 
 h1,
@@ -155,7 +154,7 @@ h6 {
 }
 
 .header .header-container {
-  background: linear-gradient(135deg, #fbd385, #8c6231); /* gradient added */
+  background: var(--surface-color);
   border-radius: 50px;
   padding: 5px 25px 5px 30px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
@@ -181,8 +180,8 @@ h6 {
 
 .header .btn-getstarted,
 .header .btn-getstarted:focus {
-  color: #fbd385 !important;
-  background: #000034; /* gradient added */
+  color: #000034 !important;
+  background: linear-gradient(135deg, #fbd385, #8c6231); /* gradient added */
   font-size: 14px;
   padding: 8px 20px;
   margin: 0 0 0 30px;
@@ -192,8 +191,8 @@ h6 {
 
 .header .btn-getstarted:hover,
 .header .btn-getstarted:focus:hover {
-  color: #fbd385 !important;
-  background: rgba(0, 0, 52, 0.7); /* keep same gradient or tweak if needed */
+  color: #000034 !important;
+  background: linear-gradient(135deg, #8c6231,  #fbd385); /* keep same gradient or tweak if needed */
 }
 
 
@@ -756,7 +755,7 @@ section,
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: #c89a58;
+  background: var(--accent-color);
   margin: 4px 10px;
 }
 
@@ -1311,14 +1310,18 @@ section,
 
 .services .service-card .service-icon {
   margin-bottom: 25px;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
   display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
   width: 64px;
   height: 64px;
 }
 
 .services .service-card .service-icon i {
-  font-size: 42px;
-  color: #fbd385;
+  font-size: 32px;
+  color: var(--accent-color);
   transition: all 0.3s ease;
 }
 
@@ -1499,7 +1502,7 @@ section,
 
 .steps .step-icon i {
   font-size: 32px;
-  color: #fbd385;
+  color: var(--accent-color);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -1936,8 +1939,8 @@ section,
   font-weight: 500;
   padding: 12px 25px;
   cursor: pointer;
-  background: #000034;
-  color: #fbd385 !important;
+  background: var(--surface-color);
+  color: var(--default-color);
   border-radius: 30px;
   display: flex;
   align-items: center;
@@ -1951,9 +1954,9 @@ section,
 }
 
 .portfolio .portfolio-filters li:hover {
-  color:  #fbd385 !important;
+  color: var(--accent-color);
   transform: translateY(-2px);
-  background: rgba(0, 0, 52, 0.8);
+  background: color-mix(in srgb, var(--accent-color), transparent 92%);
 }
 
 .portfolio .portfolio-filters li:hover i {
@@ -1962,7 +1965,7 @@ section,
 
 .portfolio .portfolio-filters li.filter-active {
   background: linear-gradient(135deg, #fbd385, #8c6231); /* gradient added */
-  color: #000034 !important;
+  color: #000034;
 }
 
 .portfolio .portfolio-filters li.filter-active:hover {
@@ -2048,7 +2051,7 @@ section,
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #fbd385, #8c6231); /* gradient added */
+  background: var(--surface-color);
   color: var(--accent-color);
   border-radius: 12px;
   font-size: 20px;
@@ -2058,7 +2061,7 @@ section,
 }
 
 .portfolio .portfolio-entry .entry-image .entry-overlay .entry-links a:hover {
-  background: linear-gradient(135deg, #8c6231, #fbd385); /* gradient added */
+  background: var(--accent-color);
   color: var(--contrast-color);
   transform: translateY(-2px);
 }

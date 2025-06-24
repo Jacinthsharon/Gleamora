@@ -2009,7 +2009,7 @@ section,
 .portfolio .portfolio-entry .entry-image .entry-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+  background: linear-gradient(180deg, transparent 0%, rgba(148, 145, 145, 0.8) 100%);
   display: flex;
   align-items: flex-end;
   padding: 30px;

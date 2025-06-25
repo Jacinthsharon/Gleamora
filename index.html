@@ -80,7 +80,7 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="#about">Get Started</a>
+      <a class="btn-getstarted" href="#contact">Get Started</a>
 
     </div>
   </header>
@@ -2124,13 +2124,14 @@
       </div>
 
       <!-- Contact Form Section (Overlapping) -->
-      <div class="container form-container-overlap">
+      <div id="contact" class="container form-container-overlap">
         <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="300">
           <div class="col-lg-10">
             <div class="contact-form-wrapper">
               <h2 class="text-center mb-4">Get in Touch</h2>
 
-              <form action="forms/contact.php" method="post" class="php-email-form">
+              <form id="contact-form" class="php-email-form">
+
                 <div class="row g-3">
                   <div class="col-md-6">
                     <div class="form-group">
@@ -2177,8 +2178,11 @@
                   <div class="col-12 text-center">
                     <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
                   </div>
+
                 </div>
+
               </form>
+
             </div>
           </div>
         </div>
@@ -2265,9 +2269,36 @@
   <!-- Preloader -->
   <div id="preloader"></div>
 
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init("BinnJOok6SKM8rAgB"); // Replace with your EmailJS Public Key
+    })();
+
+    document.getElementById("contact-form").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      emailjs.sendForm("service_88td1ax", "template_vfm7s2i", this)
+        .then(function(response) {
+          console.log("SUCCESS!", response.status, response.text);
+          document.querySelector(".sent-message").style.display = "block";
+          document.querySelector(".error-message").style.display = "none";
+          document.getElementById("contact-form").reset();
+        }, function(error) {
+          console.log("FAILED...", error);
+          document.querySelector(".sent-message").style.display = "none";
+          document.querySelector(".error-message").textContent = "Message failed to send. Please try again.";
+          document.querySelector(".error-message").style.display = "block";
+        });
+    });
+  </script>
+
+
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>

@@ -198,6 +198,9 @@ h5 {
   background: rgba(0, 0, 52, 0.7); /* keep same gradient or tweak if needed */
 }
 
+.hero-content h5{
+  font-weight: bold;
+}
 
 @media (max-width: 1200px) {
   .header {

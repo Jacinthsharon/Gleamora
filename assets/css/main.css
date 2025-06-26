@@ -3874,7 +3874,6 @@ section,
   font-size: 60px;
 }
 
-<<<<<<< HEAD
 .book-gallery {
   overflow: hidden;
   padding: 20px 0;
@@ -3930,11 +3929,6 @@ section,
 
 .book-gallery:hover .book-track {
   animation-play-state: paused;
-=======
-.hero-content h2 {
-  font-weight: bold;
-  font-size: 45px;
-  color: #fff !important;
 }
 
 .hero-content {
@@ -3965,5 +3959,4 @@ section,
   .hero-content p {
     font-size: 16px;
   }
->>>>>>> 2bc92cb25f25055ae1fa017344e919f97c20c4c2
 }

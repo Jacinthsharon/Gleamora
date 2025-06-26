@@ -798,6 +798,7 @@ section,
   left: 0;
   height: 100%;
   width: 100%;
+  background: rgba(114, 114, 114, 0.2);  /* Semi-transparent background */
   z-index: 0;
 }
 .hero-content {

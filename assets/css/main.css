@@ -3877,11 +3877,9 @@ section,
   .hero-content p { font-size: 1rem; }
 }
 
-<<<<<<< HEAD
 .info-content a {
   color: #fbd385 !important;;
 }
-=======
 .hero-content h5 {
   font-weight: bold;
   font-size: 60px;
@@ -3973,4 +3971,3 @@ section,
     font-size: 16px;
   }
 }
->>>>>>> 8be75f2866958fb6e324e699b947603c15f9bd90
